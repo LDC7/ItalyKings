@@ -1,0 +1,11 @@
+.article-container {
+    margin-bottom: 20px;
+    background-color: #47423F;
+}
+
+.app-title {
+    border-style: solid;
+    border-width: 1px;
+    font-size: 36pt;
+    color: #EEEEEE;
+}

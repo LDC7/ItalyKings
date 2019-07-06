@@ -1,0 +1,26 @@
+.article {
+    display: flex;
+    border-style: solid;
+    border-width: 2px;
+    flex-direction: row;
+}
+
+.article-imgpart {
+    border-style: solid;
+    border-width: 0;
+    border-right-width: 3px;
+    padding: 2px;
+}
+
+.article-textpart-title {
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 3px;
+    padding: 2px;
+    font-size: 18pt;
+}
+
+.article-textpart-description {
+    padding: 2px;
+    font-size: 16pt;
+}
