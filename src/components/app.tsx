@@ -5,6 +5,7 @@ import ArticleContainer from './articleContainer';
 import DataLoader from '../data/dataLoader';
 
 require('./app.css');
+require('./custom-scrollbar/scrollbar.css');
 
 interface IProps {
 

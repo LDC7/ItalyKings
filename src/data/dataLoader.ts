@@ -25,7 +25,7 @@ export default class DataLoader {
       case -3:
         return '#FF4600';
       case 1:
-        return '#FFD854';
+        return '#FFE280';
       case 2:
         return '#3CBDFE';
       case 3:

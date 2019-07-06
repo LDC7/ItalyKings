@@ -16,11 +16,12 @@
     border-style: solid;
     border-width: 0;
     border-bottom-width: 3px;
-    padding: 2px;
+    padding: 3px;
     font-size: 18pt;
 }
 
 .article-textpart-description {
-    padding: 2px;
+    padding: 5px;
     font-size: 16pt;
+    text-align: justify;
 }
