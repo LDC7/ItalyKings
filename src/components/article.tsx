@@ -23,7 +23,7 @@ export default class Article extends React.Component<IProps, IState> {
     const image = this.props.data.Image;
     return image != null ?
       <div className='article-imgpart'>
-        <img src={image}/>
+        <img className='article-image' src={image}/>
       </div> : null;
   }
 

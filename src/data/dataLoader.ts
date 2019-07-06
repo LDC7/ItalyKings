@@ -2,8 +2,11 @@ import ArticleData from './articleData';
 
 class SerializedData{
   title: string;
-	desc: string;
-	color: number;
+  birthYear: number;
+  deathYear: number;
+  desc: string;
+  spouses: Array<string>;
+  color: number;
 }
 
 const tryRequire = (path: string): string | null => {
@@ -44,7 +47,10 @@ export default class DataLoader {
     
     const serializedData = require(`${folderPath}/data.json`) as SerializedData;
     data.Title = serializedData.title;
+    data.birthDate = serializedData.birthYear;
+    data.deathDate = serializedData.deathYear;
     data.Description = serializedData.desc;
+    data.Spouses = serializedData.spouses;
     data.BackgroundColor = DataLoader.ColorParser(serializedData.color);
 
     const imagePath = `${folderPath}/image.png`;
@@ -73,6 +79,6 @@ export default class DataLoader {
       index++;
     }
 
-    return articles;
+    return articles.sort((f, s) => { return f.deathDate - s.deathDate });
   }
 }

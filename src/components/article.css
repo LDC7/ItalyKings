@@ -12,6 +12,13 @@
     padding: 2px;
 }
 
+.article-image {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .article-textpart-title {
     border-style: solid;
     border-width: 0;
